@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Poppins:wght@300&display=swap");
+body {
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+.home {
+  margin-left: 0%;
+}
+section {
+  padding: 20px 10px;
+}
+section:nth-child(even) {
+  border-top: 1px solid #646464;
+  border-bottom: 1px solid #646464;
+  padding-bottom: 30px;
+}
+section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+}
+/* ======================== SideBar ======================= */
+.nav-bar {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(165, 42, 42, 0.95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+}
+.brand-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 2px;
+  align-self: center;
+}
+.toggle-button {
+  border: 1px solid rgba(255, 255, 255, 0.623);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bars {
+  cursor: pointer;
+}
+.show-menu {
+  transition: all 0.3s ease-in;
+  /* width: 50%; */
+  transform: translateX(0%);
+  transition: all 0.3s ease-in-out;
+}
+.hide-menu {
+  transition: all 0.3s ease-out;
+  /* right: -50%; */
+  /* width: 0%; */
+  transform: translateX(120%);
+  transition: all 0.3s ease-in-out;
+}
+.menu-items {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  background-color: rgba(165, 42, 42, 0.95);
+  /* float: right; */
+  right: 0%;
+  top: 8vh;
+  height: 92vh;
+}
+.menu-items ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0px 10px;
+  padding: 0px;
+}
+.menu-items ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.profile-bg {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background-image: url("./Images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+/* ================================ Home ============================= */
+#section1 h1 {
+  font-size: 5rem;
+  font-family: "Goldman", cursive;
+  color: #d3b73c;
+}
+.phoneNo,
+.email {
+  font-size: 1rem;
+}
+#section1 p {
+  font-size: 1rem;
+}
+.social-media {
+  width: 100%;
+  margin-top: 40px;
+}
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  background-color: #222222;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.icons:hover {
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+}
+/* ============================ Section 2 =========================== */
+#section2 h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+}
+.designation {
+  font-size: 1.5rem;
+  padding: 0;
+  font-weight: 600;
+  color: #292929;
+}
+.company-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #646464;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.work-time {
+  font-size: 1rem;
+  color: #c7ab30;
+}
+/* ============================ Section 3 =========================== */
+#section3 h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+}
+.university-name {
+  font-size: 1.5rem;
+  padding: 0;
+  font-weight: 600;
+  color: #292929;
+}
+.course-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #646464;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.details {
+  padding: 30px 0;
+}
+.specialization {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #646464;
+}
+.percentage {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #646464;
+}
+.education {
+  margin-bottom: 50px;
+}
+/* ================================== Section 4 ========================= */
+.subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #646464;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#section4 ul {
+  color: #3a3a3a;
+}
+#section4 ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 768px) {
+  .home {
+    margin-left: 30%;
+  }
+  .toggle-button {
+    display: none;
+  }
+  .menu-items {
+    /* display: flex; */
+    width: 100%;
+    /*justify-content: center;
+    align-items: initial; */
+    left: -120%;
+  }
+
+  .menu-items ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .nav-bar {
+    justify-content: center;
+    /* padding-left: 30px; */
+    width: 30%;
+  }
+  .social-media {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-items {
+    /* display: flex; */
+    width: 100%;
+    /*justify-content: center;
+    align-items: initial; */
+    left: -120%;
+  }
+  .home {
+    margin-left: 25%;
+  }
+  .nav-bar {
+    justify-content: center;
+    /* padding-left: 30px; */
+    width: 25%;
+  }
+  .social-media {
+    width: 40%;
+  }
+}
